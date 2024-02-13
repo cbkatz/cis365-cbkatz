@@ -1,0 +1,94 @@
+/* Add your CSS style definitions to this file */
+
+body
+{
+    margin: 0em 4em;
+}
+img
+{
+    width: 550px;
+}
+h1
+{
+    font-family: 'Roboto Slab', serif;   
+    font-size: 2rem;
+    color: #9f2042;  
+    text-align:center;
+    
+}
+
+#details 
+{
+    font-family: 'Open Sans', serif;   
+    font-size: 1.25rem;   
+    color: gainsboro;
+    text-align:center;
+}
+
+blockquote
+{
+    font-size: 1.25rem;
+    border: 1pt solid gainsboro;
+    text-align:center;
+}
+#buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#buttons a:first-child
+{
+   
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line: none;
+    cursor: pointer;
+    border: 1pt solid gainsboro;
+    color: #ec8295;
+  }
+
+#buttons a:last-child
+{
+   
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line: none;
+    cursor: pointer;
+    border: 1pt solid gainsboro;
+    color: #ec8295;
+
+  }
+
+footer
+{
+background-color: black;
+
+}
+
+a:last-of-type, a:nth-last-of-type(2), a:nth-last-of-type(3)
+{
+    font-family: 'Open Sans', serif;   
+    font-size: 1.25rem;   
+    color: #ec8295;
+}
+
+footer:last-of-type
+{
+    font-family: 'Open Sans', serif;   
+    font-size: 1.25rem;   
+    color: #ffffff;
+}
