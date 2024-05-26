@@ -75,7 +75,32 @@ document.addEventListener('DOMContentLoaded', function(){
       console.log(e);
       console.log("a different approach but same result")
    });
+   //version 2
+
+   document.querySelector("button").addEventListener("click", function (e)
+   {
+      console.log(e.target.textContent);
+      console.log(e);
+      console.log("a different approach but same result")
+   }
+   );
+   
+   function logParent(e){
+      console.log("the parent was clicked!");
+      console.long(e.target);
+
+      if (e.target && e.target.nodeName == "IMG"){
+         console.log("the image was clicked!");
+         console.log(e.target);
+      }
+      if (e.target && e.target.nodeName == "BUTTON"){
+         console.log("The cild button was clicked!");
+      }
+   }
+   document.getElementById("parent").addEventListener("click", logParent);
 });  
+
+
 
 
 
