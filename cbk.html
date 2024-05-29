@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final</title>
+    <link href="final.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    
+    
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>    
+    
+    
+<script type="text/babel">
+   //Script A (REACT)
+   //Instructions:
+   //Update the app to increase the count by one when the button is clicked. 
+   //You will have to add code to set state, use props, and handle changes.
+   //import React, {useState} from "react";
+   //import "./App.css";
+   const App = () => {
+ 
+      return (
+         <article className="app">
+            <div className="box">
+               <Counter/>
+            </div>
+         </article>
+      );
+         
+   }
+
+   const Counter = () => {
+      const [count, setCount] = React.useState(0);
+
+      const handleClick = () => {
+         setCount(count + 1);
+
+      };
+      return (<div className="row invert">
+                  <h2>Count</h2>
+                  <h3>{count}</h3>
+                  <button onClick = {handleClick}>Count Up</button>
+            </div>);
+   };
+    
+   ReactDOM.render(<App />, document.querySelector('#react-container')); 
+</script> 
+
+<script>
+   //Script B (Javascript Arrays)
+   let weatherForecast = [{day: 'Sunday', weather: 'Sunny'}, 
+                            {day: 'Monday', weather: 'Rainy'}, 
+                            {day: 'Tuesday', weather: 'Cloudy'}, 
+                            {day: 'Wednesday', weather: 'Partly-Cloudy'}, 
+                            {day: 'Thursday', weather: 'Partly Sunny'}, 
+                            {day: 'Friday', weather: 'Cloudy'},
+                            {day: 'Shabbos', weather: 'Sunny'}];
+
+   //1. Copy only items with where the weather is Sunny and print the results:
+
+   //2. Print the weather forecast for Wednesday:
+
+   //3. Print the day of the week and the weather in a full sentence for each item in the array. Example 'The weather for Sunday is Sunny.':
+</script>        
+</head>
+<body>
+   <div id='react-container' ></div>
+    
+  </body>
+</html>
